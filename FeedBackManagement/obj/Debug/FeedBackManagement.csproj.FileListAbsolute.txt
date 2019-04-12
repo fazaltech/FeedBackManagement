@@ -1,0 +1,62 @@
+C:\Reports Management\FeedBackManagement\FeedBackManagement\bin\FeedBackManagement.dll.config
+C:\Reports Management\FeedBackManagement\FeedBackManagement\bin\FeedBackManagement.dll
+C:\Reports Management\FeedBackManagement\FeedBackManagement\bin\FeedBackManagement.pdb
+C:\Reports Management\FeedBackManagement\FeedBackManagement\bin\Antlr3.Runtime.dll
+C:\Reports Management\FeedBackManagement\FeedBackManagement\bin\EntityFramework.dll
+C:\Reports Management\FeedBackManagement\FeedBackManagement\bin\EntityFramework.SqlServer.dll
+C:\Reports Management\FeedBackManagement\FeedBackManagement\bin\Microsoft.Web.Infrastructure.dll
+C:\Reports Management\FeedBackManagement\FeedBackManagement\bin\Newtonsoft.Json.dll
+C:\Reports Management\FeedBackManagement\FeedBackManagement\bin\System.Web.Helpers.dll
+C:\Reports Management\FeedBackManagement\FeedBackManagement\bin\System.Web.Mvc.dll
+C:\Reports Management\FeedBackManagement\FeedBackManagement\bin\System.Web.Optimization.dll
+C:\Reports Management\FeedBackManagement\FeedBackManagement\bin\System.Web.Razor.dll
+C:\Reports Management\FeedBackManagement\FeedBackManagement\bin\System.Web.WebPages.Deployment.dll
+C:\Reports Management\FeedBackManagement\FeedBackManagement\bin\System.Web.WebPages.dll
+C:\Reports Management\FeedBackManagement\FeedBackManagement\bin\System.Web.WebPages.Razor.dll
+C:\Reports Management\FeedBackManagement\FeedBackManagement\bin\WebGrease.dll
+C:\Reports Management\FeedBackManagement\FeedBackManagement\bin\EntityFramework.xml
+C:\Reports Management\FeedBackManagement\FeedBackManagement\bin\EntityFramework.SqlServer.xml
+C:\Reports Management\FeedBackManagement\FeedBackManagement\bin\System.Web.Helpers.xml
+C:\Reports Management\FeedBackManagement\FeedBackManagement\bin\System.Web.Mvc.xml
+C:\Reports Management\FeedBackManagement\FeedBackManagement\bin\System.Web.Optimization.xml
+C:\Reports Management\FeedBackManagement\FeedBackManagement\bin\System.Web.Razor.xml
+C:\Reports Management\FeedBackManagement\FeedBackManagement\bin\System.Web.WebPages.xml
+C:\Reports Management\FeedBackManagement\FeedBackManagement\bin\System.Web.WebPages.Deployment.xml
+C:\Reports Management\FeedBackManagement\FeedBackManagement\bin\System.Web.WebPages.Razor.xml
+C:\Reports Management\FeedBackManagement\FeedBackManagement\bin\Antlr3.Runtime.pdb
+C:\Reports Management\FeedBackManagement\FeedBackManagement\bin\Newtonsoft.Json.xml
+C:\Reports Management\FeedBackManagement\FeedBackManagement\obj\Debug\FeedBackManagement.dll
+C:\Reports Management\FeedBackManagement\FeedBackManagement\obj\Debug\FeedBackManagement.pdb
+C:\Reports Management\FeedBackManagement\FeedBackManagement\obj\Debug\FeedBackManagement.csprojResolveAssemblyReference.cache
+C:\FeedBackManagement\FeedBackManagement\obj\Debug\FeedBackManagement.csproj.CoreCompileInputs.cache
+C:\FeedBackManagement\FeedBackManagement\obj\Debug\FeedBackManagement.dll
+C:\FeedBackManagement\FeedBackManagement\obj\Debug\FeedBackManagement.pdb
+C:\FeedBackManagement\FeedBackManagement\bin\FeedBackManagement.dll.config
+C:\FeedBackManagement\FeedBackManagement\bin\FeedBackManagement.dll
+C:\FeedBackManagement\FeedBackManagement\bin\FeedBackManagement.pdb
+C:\FeedBackManagement\FeedBackManagement\bin\Antlr3.Runtime.dll
+C:\FeedBackManagement\FeedBackManagement\bin\EntityFramework.dll
+C:\FeedBackManagement\FeedBackManagement\bin\EntityFramework.SqlServer.dll
+C:\FeedBackManagement\FeedBackManagement\bin\Microsoft.Web.Infrastructure.dll
+C:\FeedBackManagement\FeedBackManagement\bin\Newtonsoft.Json.dll
+C:\FeedBackManagement\FeedBackManagement\bin\System.Web.Helpers.dll
+C:\FeedBackManagement\FeedBackManagement\bin\System.Web.Mvc.dll
+C:\FeedBackManagement\FeedBackManagement\bin\System.Web.Optimization.dll
+C:\FeedBackManagement\FeedBackManagement\bin\System.Web.Razor.dll
+C:\FeedBackManagement\FeedBackManagement\bin\System.Web.WebPages.Deployment.dll
+C:\FeedBackManagement\FeedBackManagement\bin\System.Web.WebPages.dll
+C:\FeedBackManagement\FeedBackManagement\bin\System.Web.WebPages.Razor.dll
+C:\FeedBackManagement\FeedBackManagement\bin\WebGrease.dll
+C:\FeedBackManagement\FeedBackManagement\bin\EntityFramework.xml
+C:\FeedBackManagement\FeedBackManagement\bin\EntityFramework.SqlServer.xml
+C:\FeedBackManagement\FeedBackManagement\bin\System.Web.Helpers.xml
+C:\FeedBackManagement\FeedBackManagement\bin\System.Web.Mvc.xml
+C:\FeedBackManagement\FeedBackManagement\bin\System.Web.Optimization.xml
+C:\FeedBackManagement\FeedBackManagement\bin\System.Web.Razor.xml
+C:\FeedBackManagement\FeedBackManagement\bin\System.Web.WebPages.xml
+C:\FeedBackManagement\FeedBackManagement\bin\System.Web.WebPages.Deployment.xml
+C:\FeedBackManagement\FeedBackManagement\bin\System.Web.WebPages.Razor.xml
+C:\FeedBackManagement\FeedBackManagement\bin\Antlr3.Runtime.pdb
+C:\FeedBackManagement\FeedBackManagement\bin\Newtonsoft.Json.xml
+C:\FeedBackManagement\FeedBackManagement\obj\Debug\FeedBackManagement.csproj.CopyComplete
+C:\FeedBackManagement\FeedBackManagement\obj\Debug\FeedBackManagement.csprojAssemblyReference.cache
