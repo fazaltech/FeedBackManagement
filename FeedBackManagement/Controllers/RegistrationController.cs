@@ -50,6 +50,58 @@ namespace FeedBackManagement.Controllers
             return View(urlt);
 
         }
+        [HttpGet]
+        public ActionResult Jsonindex(int? id, string roles)
+        {
+
+
+
+            var urlt = from m in db.users
+                       select m;
+            if (id != null)
+            {
+                urlt = urlt.Where(s => s.Id == id);
+            }
+
+            if (!string.IsNullOrEmpty(roles))
+            {
+                urlt = urlt.Where(s => s.role == roles);
+            }
+
+            return View(urlt);
+
+        }
+
+        [HttpPost, ActionName("Jsonindex")]
+        [ValidateAntiForgeryToken]
+        public ActionResult Jsonindex([Bind(Include = "Id,user_name,email_id,password,role")]Models.user users, string Roles, int? id)
+        {
+            if (ModelState.IsValid)
+            {
+                var result = db.users.SingleOrDefault(b => b.Id == id);
+
+                result.role = Roles;
+                db.SaveChanges();
+
+            }
+
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            user urse = db.users.Find(id);
+            if (urse == null)
+            {
+                return HttpNotFound();
+            }
+
+            return View(urse);
+        }
+
+
+
+
+
         public ActionResult Registration()
         {
             return View();
@@ -59,11 +111,7 @@ namespace FeedBackManagement.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Registration(user use)
         {
-            //var mail = db.users.Where(x => x.user_name == use.user_name).Where(x => x.password == use.password).Select(x => x.email_id).Max();
-            //if (use.password ) 
-            //{
-            //    ViewBag.Pw = "Password not same";
-            //}
+
             Thread.Sleep(200);
             var precheck = db.users.Where(x => x.user_name == use.user_name).FirstOrDefault();
 
@@ -80,7 +128,7 @@ namespace FeedBackManagement.Controllers
                 db.users.Add(use);
                 db.SaveChanges();
 
-                //return this.RedirectToAction("Login", "Registration");
+
             }
             ViewBag.Message = "Contact admin to assign role";
             return View();
@@ -89,12 +137,7 @@ namespace FeedBackManagement.Controllers
         }
         public ActionResult Login()
         {
-            //var Fieldlist = new List<string>();
-            //var FieldQry = from d in db.fields
-            //               orderby d.Id
-            //               select d.field_name;
-            //Fieldlist.AddRange(FieldQry.Distinct());
-            //ViewBag.Fieldview = new SelectList(Fieldlist);
+
 
             return View();
         }
@@ -131,7 +174,7 @@ namespace FeedBackManagement.Controllers
 
 
                 Session["field"] = Fieldview.ToString();
-                //user.email_id = (user.user_name && user.password);
+
 
 
                 FormsAuthentication.SetAuthCookie(user.user_name, false);
@@ -144,17 +187,13 @@ namespace FeedBackManagement.Controllers
             else
             {
 
-                //   ModelState.AddModelError("", "Login details are wrong.");
+
                 ViewBag.Mg = "Login details are wrong.";
                 return View(user);
 
             }
 
-            //var userDetail = db.user_account.Where(x => x.user_name == user.user_name && x.password == user.password).Select(x => x.email_id).Max();
 
-            //    ViewBag.Message = "Helle";
-
-            //return View();
         }
 
 
@@ -203,7 +242,7 @@ namespace FeedBackManagement.Controllers
                 return ViewBag.error = ex.Message;
             }
         }
-
+        [Authorize(Roles = "admin")]
         public ActionResult AssignRole(int? id)
         {
             if (id == null)
@@ -219,8 +258,9 @@ namespace FeedBackManagement.Controllers
             return View(urse);
         }
         [HttpPost, ActionName("AssignRole")]
+        [Authorize(Roles = "admin")]
         [ValidateAntiForgeryToken]
-        public ActionResult AssignRole([Bind(Include = "Id,user_name,email_id,password,role")]Models.user users , string Roles,int? id)
+        public ActionResult AssignRole([Bind(Include = "Id,user_name,email_id,password,role")]Models.user users, string Roles, int? id)
         {
             if (ModelState.IsValid)
             {
@@ -243,5 +283,85 @@ namespace FeedBackManagement.Controllers
 
             return View(urse);
         }
+
+        //public ActionResult JsAssignRole([Bind(Include = "Id,user_name,email_id,password,role")]Models.user users, string Roles, int? id)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        var result = db.users.SingleOrDefault(b => b.Id == id);
+
+        //        result.role = Roles;
+        //        db.SaveChanges();
+
+        //    }
+
+        //    if (id == null)
+        //    {
+        //        return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+        //    }
+        //    user urse = db.users.Find(id);
+        //    if (urse == null)
+        //    {
+        //        return HttpNotFound();
+        //    }
+
+        //    return View(urse);
+        //}
+
+        public JsonResult Search(string query)
+        {
+
+
+            
+
+            List<Locations> locations = new List<Locations>()
+        { 
+                
+                
+
+            new Locations() {Id = 1, Label = "Common Blackbird",Value = "Common Blackbird",},
+            new Locations() {Id = 2, Label = "Locustella naevia",Value = "Locustella naevia",},
+            new Locations() {Id = 3, Label = "Locustella naevia",Value = "Locustella naevia",},
+            new Locations() {Id = 3, Label = "cat",Value = "cat",}
+            //new Locations() {Id = 2, Name = "Walles"},
+            //new Locations() {Id = 3, Name = "Birmingham"},
+            //new Locations() {Id = 4, Name = "Edinburgh"},
+            //new Locations() {Id = 5, Name = "Glasgow"},
+            //new Locations() {Id = 6, Name = "Liverpool"},
+            //new Locations() {Id = 7, Name = "Bristol"},
+            //new Locations() {Id = 8, Name = "Manchester"},
+            //new Locations() {Id = 9, Name = "NewCastle"},
+            //new Locations() {Id = 10, Name = "Leeds"},
+            //new Locations() {Id = 11, Name = "Sheffield"},
+            //new Locations() {Id = 12, Name = "Nottingham"},
+            //new Locations() {Id = 13, Name = "Cardif"},
+            //new Locations() {Id = 14, Name = "Cambridge"},
+            //new Locations() {Id = 15, Name = "Bradford"},
+            //new Locations() {Id = 16, Name = "Kingston Upon Hall"},
+            //new Locations() {Id = 17, Name = "Norwich"},
+            //new Locations() {Id = 18, Name = "Conventory"}
+
+            };
+            //var b = (from a in locations
+            //                 where a.Label.StartsWith(query)
+            //                 select new
+            //                 {
+            //                     label = a.Label,
+            //                     val = a.Id
+            //                 }).ToList();
+
+            var b = (from N in locations
+                            where N.Label.StartsWith(query)
+                            select new { N.Label,N.Id });
+
+
+            // var Loc = locations.Where(x => x.Label.StartsWith(query.ToLower())).Select(x => x.Label).ToList();
+            return Json(b.ToList(),JsonRequestBehavior.AllowGet);
+        }
+
+
+
     }
+
+
 }

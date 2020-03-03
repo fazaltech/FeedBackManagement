@@ -2,7 +2,7 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 02/04/2019 12:12:33
+-- Date Created: 09/02/2019 11:17:15
 -- Generated from EDMX file: C:\FeedBackManagement\FeedBackManagement\Models\Feedbackmodel.edmx
 -- --------------------------------------------------
 
@@ -25,8 +25,11 @@ GO
 IF OBJECT_ID(N'[dbo].[feedbacks]', 'U') IS NOT NULL
     DROP TABLE [dbo].[feedbacks];
 GO
-IF OBJECT_ID(N'[dbo].[logins]', 'U') IS NOT NULL
-    DROP TABLE [dbo].[logins];
+IF OBJECT_ID(N'[dbo].[fields]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[fields];
+GO
+IF OBJECT_ID(N'[dbo].[users]', 'U') IS NOT NULL
+    DROP TABLE [dbo].[users];
 GO
 
 -- --------------------------------------------------
@@ -43,7 +46,8 @@ CREATE TABLE [dbo].[feedbacks] (
     [filepath] varchar(max)  NULL,
     [employee_name] varchar(50)  NULL,
     [emp_field] varchar(50)  NULL,
-    [date_time] datetime  NULL
+    [date_time] datetime  NULL,
+    [status] varchar(50)  NULL
 );
 GO
 

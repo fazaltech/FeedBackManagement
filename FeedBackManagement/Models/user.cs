@@ -11,27 +11,13 @@ namespace FeedBackManagement.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel;
-
+    
     public partial class user
     {
         public int Id { get; set; }
-
-        [DisplayName("User Name")]
         public string user_name { get; set; }
-        [DisplayName("Email")]
         public string email_id { get; set; }
-        [DisplayName("Password")]
         public string password { get; set; }
-        [DisplayName("Role")]
         public string role { get; set; }
-    }
-
-
-
-    public enum Roles
-    {
-        admin=1,
-        manager=2
     }
 }

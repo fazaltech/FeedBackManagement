@@ -11,27 +11,18 @@ namespace FeedBackManagement.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel;
-
+    
     public partial class feedback
     {
         public int Id { get; set; }
-        [DisplayName("Type")]
         public string type { get; set; }
-        [DisplayName("Summary")]
         public string summary { get; set; }
-        [DisplayName("Description")]
         public string description { get; set; }
-
         public string filename { get; set; }
         public string filepath { get; set; }
-        [DisplayName("Employee Name")]
         public string employee_name { get; set; }
-        [DisplayName("Employee Field")]
         public string emp_field { get; set; }
-        [DisplayName("Date")]
         public Nullable<System.DateTime> date_time { get; set; }
-        [DisplayName("Status")]
         public string status { get; set; }
     }
 }

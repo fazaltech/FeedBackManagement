@@ -152,6 +152,7 @@
     <Compile Include="Models\field.cs">
       <DependentUpon>Feedbackmodel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Locations.cs" />
     <Compile Include="Models\SiteRole.cs" />
     <Compile Include="Models\user.cs">
       <DependentUpon>Feedbackmodel.tt</DependentUpon>
@@ -1722,6 +1723,7 @@
     <Content Include="Views\Registration\Index.cshtml" />
     <Content Include="Views\Registration\AssignRole.cshtml" />
     <Content Include="Views\Feedback\UserDetails.cshtml" />
+    <Content Include="Views\Registration\Jsonindex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

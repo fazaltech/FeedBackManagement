@@ -12,16 +12,10 @@
     @Html.AntiForgeryToken()
 
     <div class="form-horizontal">
-        @*<h4>feedback</h4>*@
+        
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        @*<div class="form-group">
-                @Html.LabelFor(model => model.type, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.type, new { htmlAttributes = new { @class = "form-control" } })
-                    @Html.ValidationMessageFor(model => model.type, "", new { @class = "text-danger" })
-                </div>
-            </div>*@
+        
 
         <div class="form-group">
             @Html.LabelFor(model => model.summary,"Summary", htmlAttributes: new { @class = "control-label col-md-2" })
@@ -39,29 +33,7 @@
             </div>
         </div>
 
-        @*<div class="form-group">
-                @Html.LabelFor(model => model.filename, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.filename, new { htmlAttributes = new { @class = "form-control" } })
-                    @Html.ValidationMessageFor(model => model.filename, "", new { @class = "text-danger" })
-                </div>
-            </div>*@
-
-        @*<div class="form-group">
-                @Html.LabelFor(model => model.filepath, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.filepath, new { htmlAttributes = new { @class = "form-control" } })
-                    @Html.ValidationMessageFor(model => model.filepath, "", new { @class = "text-danger" })
-                </div>
-            </div>*@
-
-        @*<div class="form-group">
-                @Html.LabelFor(model => model.employee_name, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.employee_name, new { htmlAttributes = new { @class = "form-control" } })
-                    @Html.ValidationMessageFor(model => model.employee_name, "", new { @class = "text-danger" })
-                </div>
-            </div>*@
+       
         <div class="form-group">
             <input type="checkbox" id="box" />
             <input type="file" id="Content" name="Content" class="btn btn-block" disabled>

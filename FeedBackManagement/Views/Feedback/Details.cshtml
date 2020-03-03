@@ -37,21 +37,7 @@
             @Html.DisplayFor(model => model.description)
         </dd>
 
-        @*<dt>
-                @Html.DisplayNameFor(model => model.filename)
-            </dt>
-
-            <dd>
-                @Html.DisplayFor(model => model.filename)
-            </dd>*@
-
-        @*<dt>
-                @Html.DisplayNameFor(model => model.filepath)
-            </dt>
-
-            <dd>
-                @Html.DisplayFor(model => model.filepath)
-            </dd>*@
+       
 
         <dt>
             @Html.DisplayNameFor(model => model.employee_name)
@@ -86,7 +72,7 @@
 
     </dl>
 
-    @*<img src="data:image;base64,@System.Convert.ToByte(Model.filepath)" width="100" height="100">*@
+    
 
 </div>
 @using (Html.BeginForm())
@@ -121,7 +107,7 @@
 
 
 
-    @*@Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |*@
+    
     @Html.ActionLink("Back to List", "Index")
 
 </div>

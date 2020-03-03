@@ -8,7 +8,7 @@
 <h2>Index</h2>
 
 <p>
-    @*@Html.ActionLink("Create New", "Create")*@
+    
     @using (Html.BeginForm("Index", "Feedback", FormMethod.Get))
     {
     <p>
@@ -27,24 +27,14 @@
             <th>
                 @Html.DisplayNameFor(model => model.summary)
             </th>
-            @*<th>
-                    @Html.DisplayNameFor(model => model.description)
-                </th>*@
-            @*<th>
-                    @Html.DisplayNameFor(model => model.filename)
-                </th>*@
-            @*<th>
-                    @Html.DisplayNameFor(model => model.filepath)
-                </th>*@
+           
             <th>
                 @Html.DisplayNameFor(model => model.employee_name)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.emp_field)
             </th>
-            @*<th>
-                    @Html.DisplayNameFor(model => model.date_time)
-                </th>*@
+            
             <th></th>
         </tr>
 
@@ -57,29 +47,17 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.summary)
                 </td>
-                @*<td>
-                        @Html.DisplayFor(modelItem => item.description)
-                    </td>*@
-                @*<td>
-                        @Html.DisplayFor(modelItem => item.filename)
-                    </td>*@
-                @*<td>
-                        @Html.DisplayFor(modelItem => item.filepath)
-                    </td>*@
+               
                 <td>
                     @Html.DisplayFor(modelItem => item.employee_name)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.emp_field)
                 </td>
-                @*<td>
-                        @Html.DisplayFor(modelItem => item.date_time)
-                    </td>*@
+               
                 <td>
                     @Html.ActionLink("Details", "Details", new { id = item.Id })
-                    @*@Html.ActionLink("Edit", "Edit", new { id=item.Id }) |*@
-
-                    @* @Html.ActionLink("Delete", "Delete", new { id=item.Id })*@
+                   
                 </td>
             </tr>
         }

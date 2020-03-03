@@ -6,9 +6,7 @@
 
 <h2>Index</h2>
 
-@*<p>
-        @Html.ActionLink("Create New", "Create")
-    </p>*@
+
 @using (Html.BeginForm("Index", "Registration", FormMethod.Get))
 {
     <p>
@@ -26,9 +24,7 @@
         <th>
             @Html.DisplayNameFor(model => model.email_id)
         </th>
-        @*<th>
-                @Html.DisplayNameFor(model => model.password)
-            </th>*@
+        
         <th>
             @Html.DisplayNameFor(model => model.role)
         </th>
@@ -44,17 +40,15 @@
             <td>
                 @Html.DisplayFor(modelItem => item.email_id)
             </td>
-            @*<td>
-                    @Html.DisplayFor(modelItem => item.password)
-                </td>*@
+            
             <td>
                 @Html.DisplayFor(modelItem => item.role)
             </td>
             <td>
-                @*@Html.ActionLink("Edit", "Edit", new { id = item.Id }) |*@
+                
                 @Html.ActionLink("Details", "Details", new { id = item.Id }) |
                 @Html.ActionLink("Assign Role", "AssignRole", new { id = item.Id })|
-                @*@Html.ActionLink("Delete", "Delete", new { id = item.Id })*@
+                
             </td>
         </tr>
     }
